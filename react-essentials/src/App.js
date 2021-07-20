@@ -10,18 +10,18 @@ function Header(props) {
   );
 }
 
-function Main() {
+function Main(props) {
   return (
     <section>
-      <p>We serve the most delicious food around.</p>
+      <p>We serve the most {props.adjective} food around.</p>
     </section>
   )
 }
 
-function Footer() {
+function Footer(props) {
   return (
     <footer>
-      <p>It's true</p>
+      <p>Copytight {props.year}</p>
     </footer>    
   )
 }
@@ -30,8 +30,8 @@ function App() {
   return (
     <div className="App">
       <Header name="Joe"/>
-      <Main />
-      <Footer />
+      <Main adjective="amazing"/>
+      <Footer year={new Date().getFullYear()}/>
     </div>
   );
 }
