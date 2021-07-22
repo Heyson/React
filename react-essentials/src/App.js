@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import restaurant from "./restaurant.jpg";
 
 function Header(props) {
   return(
@@ -13,6 +14,7 @@ function Main(props) {
   return (
     <section>
       <p>We serve the most {props.adjective} food around.</p>
+      <img src={restaurant} height={200} alt={"napking and utensils on plate"}/>
       <ul style={{textAlign: "left"}}>
         {props.dishes.map((dish) => (
           <li key={dish.id}>{dish.title}</li>
@@ -43,7 +45,7 @@ console.log(dishObjects);
 function App() {
   return (
     <div className="App">
-      <Header name="Joe"/>
+      <Header name="Joe's"/>
       <Main adjective="amazing" dishes={dishObjects}/>
       <Footer year={new Date().getFullYear()}/>
     </div>
