@@ -1,4 +1,5 @@
 import { useState } from "react";
+import BlogList from "./BlogList";
 
 const Home = () => { 
     // blogs array using React state and hook
@@ -10,13 +11,7 @@ const Home = () => {
     return (
     // cycles through blogs array and maps each object and outputs title: and author: with JSX template
         <div className ="home">
-            {blogs.map((blog) =>(
-                <div className="blog-preview" key={blog.id}>
-                    <h2>{ blog.title }</h2>
-                    <p>Written by { blog.author }</p>
-                </div>   
-
-            ))}
+           <BlogList blogs={blogs} title="All Blogs!"/>
         </div>
     );
 }
