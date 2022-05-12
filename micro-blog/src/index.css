@@ -2,7 +2,11 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: #333;
+  color: #999;
+}
+
+body{
+  background-color: #333;
 }
 .navbar {
   padding: 20px;
@@ -36,8 +40,9 @@
 .blog-preview {
   padding: 10px 16px;
   margin: 20px 0;
-  border: 1px solid #038e85;
+  border: 3px solid #038e85;
   border-radius: 15px;
+  background-color: #fff;
 }
 .blog-preview:hover {
   box-shadow: 1px 6px 10px rgba(0,0,0,0.1);
@@ -48,4 +53,59 @@
   font-size: 20px;
   color: #038e85;
   margin-bottom: 8px;
+}
+
+.blog-preview a{
+  text-decoration: none;
+}
+
+.blog-details h2 {
+  font-size: 20px;
+  color:#038e85;
+  margin-bottom: 10px;
+}
+
+.blog-details div {
+  margin: 20px 0;
+}
+
+.blog-details button {
+  background: #038e85;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #038e85;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #038e85;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
