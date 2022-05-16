@@ -17,6 +17,12 @@
       "body": "test blog test blog",
       "author": "Heyson",
       "id": 3
+    },
+    {
+      "title": "Test Blog from github pages",
+      "body": "This is a test, this a test, this is a test,",
+      "author": "Antonio",
+      "id": 4
     }
   ]
 }
